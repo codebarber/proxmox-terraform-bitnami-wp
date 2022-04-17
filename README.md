@@ -1,6 +1,6 @@
 # terraform-proxmox-bitnami-wp
 
-This terraform code will deploy bitnami wordpress in a proxmox container.
+This terraform code will deploy bitnami wordpress in a proxmox container.  This was a quick hack to deploy wordpress development sites to my home lab using bitnami wordpress, I've seen this used many places.  Instead of creating a single terraform, it is modularized the shared components.  This will allow creating alternate versions of wordpress deployments.  The current state is alpha, but works for what I use it for.  If you have questions/issues, feel free to create an issue.
 
 ## Deploying Demo Container
 
