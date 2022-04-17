@@ -27,7 +27,7 @@ rm myblog/*.tfstate*`
 ```
 
 container_name     = "demo"
-container_vmid     = "8628"
+container_vmid     = "200"
 container_password = "password"
 container_ip       = "192.168.1.10"
 container_gw       = "192.168.1.1"
