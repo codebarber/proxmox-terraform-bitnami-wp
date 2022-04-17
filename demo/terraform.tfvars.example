@@ -12,7 +12,7 @@ wp_name            = "Demo Blog"
 wp_site_url        = "localhost"
 wp_user            = "bitnami"
 wp_user_pass       = "password"
-wp_user_email      = "email@example.com"
+wp_user_email      = "name@domain.tld"
 
 proxmox_host    = "proxy"
 pm_api_url      = "https://192.168.1.20:8006/api2/json"

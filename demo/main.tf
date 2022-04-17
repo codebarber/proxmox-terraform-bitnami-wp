@@ -19,8 +19,14 @@ module "proxnami" {
   pm_password     = var.pm_password
   pm_tls_insecure = var.pm_tls_insecure
 
-  bitnami_installer = var.bitnami_installer
+  bitnami_installer  = var.bitnami_installer
+
   phpmyadmin_require = var.phpmyadmin_require
+  wp_user            = var.wp_user
+  wp_user_pass       = var.wp_user_pass
+  wp_user_email      = var.wp_user_email
+  wp_site_url        = var.wp_site_url
+  wp_name            = var.wp_name
 }
 
 output "container_name" {
