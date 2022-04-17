@@ -36,6 +36,7 @@ chmod u-x /tmp/${bitnami_installer}
 ln -s /opt/bitnami/apps /home/bitnami/apps
 ln -s /opt/bitnami/apache2/htdocs /home/bitnami/htdocs
 ln -s /opt/bitnami /home/bitnami/stack
+/opt/bitnami/apps/wordpress/bin/wp plugin update --all
 /opt/bitnami/apps/wordpress/updateip --appurl /
 /opt/bitnami/apps/wordpress/bnconfig --disable_banner 1
 /opt/bitnami/ctlscript.sh restart apache
