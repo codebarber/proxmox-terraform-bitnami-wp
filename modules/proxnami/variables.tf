@@ -33,6 +33,16 @@ variable "container_ns" {
   type        = string
 }
 
+variable "container_mem" {
+  description = "Amount of memory to allocate"
+  type        = string
+}
+
+variable "container_cores" {
+  description = "Number of cores to allocate"
+  type        = string
+}
+
 variable "ostemplate" {
   description = "The proxmox container template to use"
   type        = string

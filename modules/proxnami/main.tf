@@ -21,8 +21,8 @@ resource "proxmox_lxc" "container" {
     ostemplate   = var.ostemplate
     password     = var.container_password
     unprivileged = true
-    cores        = 2
-    memory       = 4096
+    cores        = var.container_cores
+    memory       = var.container_mem
     nameserver   = var.container_ns
     onboot       = true
     start        = true

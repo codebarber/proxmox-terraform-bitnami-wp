@@ -12,8 +12,11 @@ module "proxnami" {
   container_gw   = var.container_gw
   container_ns   = var.container_ns
 
+  container_cores = var.container_cores
+  container_mem   = var.container_mem
   rootfs_storage = var.rootfs_storage
   rootfs_size    = var.rootfs_size
+
 
   container_password   = var.container_password
   
