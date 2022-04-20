@@ -4,11 +4,14 @@ container_password = "password"
 container_ip       = "192.168.1.10"
 container_gw       = "192.168.1.1"
 container_ns       = "192.168.1.1"
-rootfs_storage     = "local-lvm"
-rootfs_size        = "8G"
 phpmyadmin_require = "ip 192.168.1.0\\/24" # set to your ip or subnet escape / required; default is local"
 ostemplate         = "tank:vztmpl/ubuntu-20.04-standard_20.04-1_amd64.tar.gz"
 bitnami_installer  = "bitnami-wordpress-5.9.3-0-linux-x64-installer.run"
+
+rootfs_storage     = "local-lvm"
+rootfs_size        = "8G"
+container_cores    = 2
+container_mem      = 4096
 
 wp_name            = "Demo Blog"
 wp_site_url        = "localhost"
