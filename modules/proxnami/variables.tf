@@ -38,6 +38,17 @@ variable "ostemplate" {
   type        = string
 }
 
+variable "rootfs_storage" {
+  description = "The proxmox storage volume to create container on"
+  type        = string
+}
+
+variable "rootfs_size" {
+  description = "The size of rootfs volume"
+  type        = string
+  default     = "8G"
+}
+
 variable "phpmyadmin_require" {
   description = "Allow to access phpmyadmin webapp"
   type        = string

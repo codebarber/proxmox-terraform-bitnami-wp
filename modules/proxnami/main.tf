@@ -31,8 +31,8 @@ resource "proxmox_lxc" "container" {
 
     //Terraform will crash without rootfs defined
     rootfs {
-        storage = "tank"
-        size    = "8G"
+        storage = var.rootfs_storage
+        size    = var.rootfs_size
     }
 
     network {
